@@ -188,7 +188,7 @@ class DjangoInputObjectType(InputObjectType):
         _meta.input_for = input_for
         _meta.container = container
 
-        super(InputObjectType, cls).__init_subclass_with_meta__(
+        super(DjangoInputObjectType, cls).__init_subclass_with_meta__(
             # container=container,
             _meta=_meta,
             **options
